@@ -2,7 +2,13 @@
 
 function amount_even(collection) {
 
-  //在这里写入代码
+	var arr = collection.filter(function (x){
+		return x % 2 === 0 ;
+	})
+	var sum = arr.reduceRight(function (prev , cur){
+		return prev + cur ;
+	})
+	return sum  ;
 }
 
 module.exports = amount_even;

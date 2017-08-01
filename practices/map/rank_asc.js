@@ -1,6 +1,9 @@
 'use strict';
 var rank_asc = function(collection){
-  return [6,5,4,3,2];
+	function numsort(a , b){
+		return b - a ;
+	}
+	return collection.sort(numsort);
 };
 
 module.exports = rank_asc;

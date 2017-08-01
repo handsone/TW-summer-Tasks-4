@@ -13,4 +13,4 @@ describe('choose_divisible_integer', function() {
     expect(result).toEqual([4,9,25,16,21,64,32,35])
   })
 
-});
+})

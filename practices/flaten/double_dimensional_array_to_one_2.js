@@ -1,8 +1,16 @@
 'use strict';
 
 function double_to_one(collection) {
-
-  //在这里写入代码
+	var answer = [] ;
+	var position ;
+	for (var A of collection ){
+		for (var B of A ){
+		position = answer.indexOf(B);
+			if (position === -1 )
+				answer.push(B);
+		}
+	}
+	return answer;
 }
 
 module.exports = double_to_one;

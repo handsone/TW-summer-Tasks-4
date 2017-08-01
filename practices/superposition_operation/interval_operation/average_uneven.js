@@ -2,7 +2,13 @@
 
 function average_uneven(collection) {
 
-  //在这里写入代码
+	var arr = collection.filter(function (x){
+		return x % 2 != 0 ;  
+	})
+	var sum = arr.reduce(function (prev , cur ){
+		return prev + cur ;
+	})
+	return sum / arr.length ;
 }
 
 module.exports = average_uneven;
